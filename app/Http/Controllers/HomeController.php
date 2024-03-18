@@ -10,7 +10,6 @@ class HomeController extends Controller
     public function __invoke()
     {
         $movies = Movie::all();
-
         return view('welcome', compact('movies'));
     }
 }
